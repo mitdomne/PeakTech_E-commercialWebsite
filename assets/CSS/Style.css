@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  body.men-page,
+  body.women-page,
+  body.index-page {
+    background-color: #e0f2f1; 
+  }
+  /* video intro */
+  .video-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .video-overlay-button {
+    position: absolute;
+    bottom: 120px; 
+    right: 300px; 
+    z-index: 2;
+  }
+  
+  .video-overlay-button .btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .video-overlay-button .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
+  /* content below*/
+
+  
+  /* img affect */
+  .image-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.4s ease-in-out;
+    display: block;
+  }
+  
+  .image-card .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .image-card:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .image-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: none;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .section-title{
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  /* #footer {
+    margin-top: 40px;
+    margin-bottom: 0 ;
+    padding-bottom: 0 ;
+  } */
+  /* .footer-image-container {
+    width: 100vw;      
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-image-container img {
+    display: block;
+    width: 100vw;       
+    height: auto;
+    margin: 0;
+    padding: 0;
+  } */
+/*discorver.html*/
+  .full-image-section {
+    width: 100vw;
+    background-color: #000; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .full-image-section img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  /*men.html*/
+  
+  .men-image-card {
+    /* position: relative;
+    display: inline-block; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .men-image-card .men-main-img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .men-image-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .men-image-card:hover .men-image-overlay-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /*women.html*/
+  .women-page {
+    background-color: #fef6f9; /* màu nền riêng cho women */
+  }
+  
+  .women-image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .women-main-img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .women-image-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .women-image-card:hover .women-image-overlay-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  
+  
